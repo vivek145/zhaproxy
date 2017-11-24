@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitor HAProxy
+
+[Service]
+Type=simple
+ExecStart=/etc/zabbix/scripts/zhaproxy.py
+
+[Install]
+WantedBy=multi-user.target
+
